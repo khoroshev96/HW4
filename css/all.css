@@ -2,8 +2,13 @@ body {
 	background: url(../img/bg-body.jpg) repeat-x 0 0;
 	font-family: Tahoma, Geneva, sans-serif;
 }
-
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: block;
+}
 .wrapper-container {
+	/*position: relative;*/
 	position: relative;
 	margin: 0 auto;
 	width: 1018px;
@@ -12,6 +17,7 @@ body {
 }
 .wrapper-container:after {
 	content: "Copyright (C) asia-holidays.com. 2010";
+	/*position: absolute;*/
 	position: absolute;
 	color: white;
 	font-size: 12px;
@@ -28,17 +34,15 @@ body {
 }
 
 /* MAIN */
+
 .main {
-	float: left;
 	width: 100%;
+	background: url(../img/bg-main.png) repeat-y 0 0;
 }
 .leftbar {
 	float: left;
 	width: 169px;
-	padding: 0 24px 0 15px;
-	border-left: 1px solid #c7cacf;
-	border-right: 1px solid #c7cacf;
-	background-color: #edeef0;
+	padding: 0 25px 0 16px;
 }
 .leftbar h1 {
 	color: #424c43;
@@ -51,17 +55,11 @@ body {
 	line-height: 24px;
 	font-size: 14px;
 }
-.content {
-	float: left;
-	width: 580px;
-}
+
 .rightbar {
-	float: left;
+	float: right;
 	width: 169px;
-	padding: 0 24px 0 15px;
-	border-left: 1px solid #c7cacf;
-	border-right: 1px solid #c7cacf;
-	background-color: #edeef0;
+	padding: 0 25px 0 16px;
 }
 .rightbar h1 {
 	color: #424c43;
@@ -73,5 +71,8 @@ body {
 	color: #424c43;
 	line-height: 24px;
 	font-size: 14px;
+}
+.content {
+	float: left;
 }
 /* end of MAIN*/
