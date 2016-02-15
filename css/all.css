@@ -24,9 +24,10 @@ body {
 	position: absolute;
 	color: white;
 	font-size: 12px;
-	bottom: -20px;
+	bottom: -30px;
 	text-align: center;
-	display: block;
+	display: inline-block;
+	line-height: 31px;
 	width: 1018px;
 }
 .wrapper {
