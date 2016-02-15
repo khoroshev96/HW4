@@ -1,6 +1,9 @@
 body {
-	background: url(../img/bg-body.jpg) repeat-x 0 0;
+	background-color: #0c739f;
 	font-family: Tahoma, Geneva, sans-serif;
+}
+.container {
+	background: url(../img/bg-body.jpg) repeat-x 0 0;
 }
 .clearfix:after {
 	content: "";
@@ -105,11 +108,85 @@ header img {
 	border-top: 1px solid #128aa7;
 	border-bottom: 1px solid #138aa7;
 }
+/* NAVIGATION */
+nav {
+	position: relative;
+	z-index: 10;
+	list-style: none;
+	text-align: center;
+	border-top: 1px solid #cacbcb;
+	border-bottom: 1px solid black;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#373737+0,303030+100 */
+	background: #373737; /* Old browsers */
+	background: -webkit-linear-gradient(#373737 0%, #303030 100%);
+	background: -o-linear-gradient(#373737 0%, #303030 100%);
+	background: linear-gradient(#373737 0%, #303030 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', endColorstr='#303030',GradientType=0 ); /* IE6-9 */
+	-webkit-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 1);
+	-moz-box-shadow:    0px 2px 6px 0px rgba(50, 50, 50, 1);
+	box-shadow:         0px 2px 6px 0px rgba(50, 50, 50, 1);
+}		
+nav>li {
+	display: inline-block;
+	padding-right: 40px;
+	position: relative;
+}
+nav>li:last-child {
+	padding-right: 0;
+}
+nav>li>a {
+	display: inline-block;
+	text-decoration: none;
+	line-height: 28px;
+	font-size: 14px;
+	color: white;
+	padding: 0 15px 0 15px;
+}
+nav>li:nth-child(2)>a {
+	background: url(../img/arrow.png) no-repeat right 12px;
+}
+nav>li:nth-child(3)>a {
+	background: url(../img/arrow.png) no-repeat right 12px;
+}
+nav>li:nth-child(4)>a {
+	background: url(../img/arrow.png) no-repeat right 12px;
+}
+.sub-menu {
+	padding: 0 45px 4px 14px;
+	background-color: #303030;
+	display: none;
+	position: absolute;
+	z-index: 7;
+	top: 29px;
+	left: 0px;
+	-webkit-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 1);
+	-moz-box-shadow:    0px 2px 6px 0px rgba(50, 50, 50, 1);
+	box-shadow:         0px 2px 6px 0px rgba(50, 50, 50, 1);
+}
+.sub-menu li {
+	padding: 0;
+	text-align: left;
+}
+.sub-menu li a {
+	line-height: 24px;
+	color: white;
+	text-decoration: none;
+}
+nav li:hover .sub-menu {
+	display: block;
+}
+/* end of NAVIGATION */
+
+
 /* end of HEADER */
+
+
 
 /* MAIN */
 
 .main {
+	position: relative;
+	z-index: 5;
 	width: 100%;
 	background: url(../img/bg-main.png) repeat-y 0 0;
 }
